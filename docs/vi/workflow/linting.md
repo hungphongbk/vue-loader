@@ -1,10 +1,10 @@
 # Linting
 
-You may have been wondering how do you lint your code inside `*.vue` files, since they are not JavaScript. We will assume you are using [ESLint](https://eslint.org/) (if you are not, you should!).
+Có thể bạn băn khoăn làm thế nào để lint code trong file `*.vue`,khi mà chúng không phải javaScript. Ta sẽ giả định rằng bạn đang dùng [ESLint](https://eslint.org/) (nếu bạn không dùng,bạn nên dùng!).
 
-You will also need the official [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue) which supports linting both the template and script parts of Vue files.
+Đồng thời bạn cũng cần phiên bản chính thức của [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue) để hỗ trợ lint cho cả phần khung và script của file Vue.
 
-Make sure to use the plugin's included config in your ESLint config:
+Đảm bảo việc sử dụng các config của plugin trong phần config của ESLint :
 
 ``` json
 {
@@ -14,19 +14,19 @@ Make sure to use the plugin's included config in your ESLint config:
 }
 ```
 
-Then from the command line:
+Sau đó từ command line :
 
 ``` bash
 eslint --ext js,vue MyComponent.vue
 ```
 
-Another option is using [eslint-loader](https://github.com/MoOx/eslint-loader) so that your `*.vue` files are automatically linted on save during development:
+Một cách khác là sử dụng [eslint-loader](https://github.com/MoOx/eslint-loader) và file `*.vue` sẽ tự động lint khi bấm save trong quá trình phát triển.
 
 ``` bash
 npm install eslint eslint-loader --save-dev
 ```
 
-Make sure it's applied as a pre-loader:
+Chắc chắn nó được áp dụng như một pre-loader :
 
 ``` js
 // webpack.config.js
