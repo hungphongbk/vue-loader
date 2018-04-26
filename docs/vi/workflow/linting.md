@@ -1,6 +1,6 @@
 # Linting
 
-Có thể bạn băn khoăn làm thế nào để lint code trong file `*.vue`,khi mà chúng không phải javaScript. Ta sẽ giả định rằng bạn đang dùng [ESLint](https://eslint.org/) (nếu bạn không dùng,bạn nên dùng!).
+Có thể bạn băn khoăn làm thế nào để lint code trong file `*.vue`, khi mà chúng không phải javaScript. Ta sẽ giả định rằng bạn đang dùng [ESLint](https://eslint.org/) (hãy học cách sử dụng nếu chưa từng dùng đến!).
 
 Đồng thời bạn cũng cần phiên bản chính thức của [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue) để hỗ trợ lint cho cả phần khung và script của file Vue.
 
@@ -26,7 +26,7 @@ Một cách khác là sử dụng [eslint-loader](https://github.com/MoOx/eslint
 npm install eslint eslint-loader --save-dev
 ```
 
-Chắc chắn nó được áp dụng như một pre-loader :
+Đảm bảo rằng nó được áp dụng như một pre-loader :
 
 ``` js
 // webpack.config.js
